@@ -1,0 +1,18 @@
+generated: '2026-09-13'
+method: searched
+source: https://www.everydayhealthgroup.com/ and https://www.everydayhealth.com/ — searched the corporate and consumer
+  sites for any API, data or developer pricing page
+plan_count: 0
+plans: []
+note: Everyday Health publishes no API plans or developer pricing of any kind, because it publishes no API. The
+  company monetizes through advertising, sponsored content, pharma commercialization services and consumer subscriptions
+  on its individual brands (DailyOM courses, Lose It! Premium, Skimm+), none of which is an API product. Programmatic
+  access to the content is sold as a bespoke license — robots.txt directs commercial users to licensing@ziffdavis.com
+  — with no published rate card. An honest zero, not an unchecked field.
+x-evidence:
+- url: https://www.everydayhealthgroup.com/
+  status: 200
+- url: https://www.everydayhealth.com/
+  status: 200
+- url: https://www.everydayhealth.com/robots.txt
+  status: 200

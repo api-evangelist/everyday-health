@@ -1,0 +1,184 @@
+generated: '2026-09-13'
+method: derived
+source: well-known/everyday-health-robots.txt (fetched https://www.everydayhealth.com/robots.txt, HTTP 200, 181,496
+  bytes, 2026-09-13)
+summary: 'Everyday Health publishes no AI-use policy page. Its AI and agent posture is stated entirely in robots.txt,
+  which is unusually explicit: a licensing preamble asserting Ziff Davis terms, a blanket Disallow for 107 named
+  AI/agent user-agents, and a separately generated 2,764-URL selective block for Google-Extended. This is the structured
+  reading of that document; the document itself is saved verbatim alongside it.'
+licensing_notice:
+  stated_in: robots.txt comment preamble
+  terms_url: https://www.ziffdavis.com/terms-of-use
+  contact: licensing@ziffdavis.com
+  prohibits:
+  - automated scraping, harvesting or extraction without written permission
+  - text and data mining under Art. 4 of the EU DSM Copyright Directive
+  - development or operation of AI/ML software or databases, including training, fine-tuning, embedding and retrieval-augmented
+    generation
+  - creating or sharing data sets containing the content
+  - any commercial purpose
+  note: A comment block in robots.txt is not machine-enforceable and no crawler parses it; it is a human-readable
+    legal notice placed in a machine-readable file.
+agent_posture:
+  blanket_ai_block: true
+  blocked_user_agents_total: 107
+  groups:
+  - group: openai
+    user_agents:
+    - GPTBot
+    - OAI-SearchBot
+    - ChatGPT-User
+    rule: 'Disallow: /'
+    exceptions: []
+  - group: general-ai-and-agent-crawlers
+    user_agent_count: 104
+    rule: 'Disallow: /'
+    exceptions:
+    - /diet-nutrition-products/dose-liver-supplement-reviews/
+    - /product-reviews/best-pregnancy-apps/
+    note: Two commercial product-review URLs are explicitly re-allowed to every otherwise-blocked AI crawler. Both
+      are affiliate/product-review pages, so the exception is a revenue carve-out, not an openness signal.
+  - group: google-extended
+    user_agents:
+    - Google-Extended
+    rule: selective
+    disallow_count: 2764
+    allow_count: 0
+    note: A generated, machine-maintained block ("Generated; do not edit by hand.") listing 2,764 individual article
+      URLs rather than a site-wide Disallow — a per-URL AI-training opt-out experiment, unique in this catalog.
+  blocked_user_agents:
+  - 008
+  - AddSearchBot
+  - AI2Bot
+  - Ai2Bot-DeepResearchEval
+  - Ai2Bot-Dolma
+  - Amazonbot
+  - AmazonBuyForMe
+  - Amzn-SearchBot
+  - Anchor Browser
+  - anthropic-ai
+  - ApifyBot
+  - ApifyWebsiteContentCrawler
+  - Applebot
+  - Applebot-extended
+  - atlassian-bot
+  - AutoRAG
+  - AwarioSmartBot
+  - AzureAI-SearchBot
+  - Big Sur AI
+  - bigsur.ai
+  - Brandwatch
+  - Bravebot
+  - Brightbot
+  - Bytespider
+  - CCBot
+  - Channel3Bot
+  - ChatGLM-Spider
+  - Claude-SearchBot
+  - Claude-User
+  - Claude-Web
+  - ClaudeBot
+  - Cloudflare-AI-Search
+  - cohere-ai
+  - cohere-training-data-crawler
+  - Cotoyogi
+  - Crawl4AI
+  - Datenbank Crawler
+  - DeepSeekBot
+  - Devin
+  - Diffbot
+  - Direqt Anomura
+  - DuckAssistBot
+  - Echobot Bot
+  - ExaBot
+  - FacebookBot
+  - Factset_spyderbot
+  - FirecrawlAgent
+  - GROK-2
+  - HTTrack
+  - iAsk
+  - iAskBot
+  - iaskspider
+  - ICC Crawler
+  - ICC-Crawler
+  - ImageSiftBot
+  - imageSpider
+  - Kangaroo Bot
+  - KlaviyoAIBot
+  - Kunato
+  - laion-huggingface-processor
+  - LCC
+  - LINER Bot
+  - LinerBot
+  - LinkupBot
+  - Manus-User
+  - Meta-ExternalAgent
+  - Meta-ExternalFetcher
+  - meta-webindexer
+  - mistral.ai
+  - MistralAI-User
+  - netEstate Imprint Crawler
+  - NovaAct
+  - Novellum AI Crawl
+  - Nutch
+  - Offline Explorer
+  - omgili
+  - opencode
+  - PanguBot
+  - PeopleInc-DCipher-Scraper/1.1.0
+  - Perplexity-User
+  - PerplexityBot
+  - PetalBot
+  - Poggio-Citations
+  - QualifiedBot
+  - SBIntuitionsBot
+  - Scrapy
+  - SeekrBot
+  - SemrushBot-OCOB
+  - SemrushBotSwa
+  - ShapBot
+  - Spider
+  - TavilyBot
+  - TerraCotta
+  - Timpibot
+  - Trae
+  - TwinAgent
+  - Velen Crawler
+  - VelenPublicWebCrawler
+  - Webzio-Extended
+  - Wrtn
+  - xAI-Web-Crawler
+  - YouBot
+  - ZanistaBot
+  - Novellum
+  default_agent_rules:
+    user_agent: '*'
+    disallow:
+    - /mail/
+    - /flash/
+    - '*/destroy/'
+    - /symptom-checker/SymptomChecker/GetSymptoms
+    - /ACCOUNT/LogOn/1
+    - /solutions/managing-child-allergies/food-allergy-recipe-swap/
+    - /testpage/
+    - /v2/
+    - /sitefinity/
+    - /socialshare/
+    - /drugs/search
+    - /v2/esi/getbibbliowidget/v2/
+    - /api/
+    - /esi/
+    - /drugs-supplements/
+    note: The default group disallows /api/ and /esi/ — the site runs internal API and edge-side-include paths under
+      its own hostname, and instructs all crawlers to stay out of them. This pipeline honored that and did not probe
+      /api/.
+implications:
+  for_agents: An autonomous agent that respects robots.txt cannot read everydayhealth.com at all. There is no llms.txt,
+    no MCP server, no agent card and no licensed machine-readable content path; the only sanctioned programmatic
+    route is a commercial license from licensing@ziffdavis.com.
+  for_the_score: This is a deliberate, documented posture, not an oversight. It is recorded here as measured fact
+    and is the reason this profile carries no agent-facing artifacts.
+x-evidence:
+- url: https://www.everydayhealth.com/robots.txt
+  status: 200
+  fetched: '2026-09-13'

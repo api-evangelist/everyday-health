@@ -1,0 +1,358 @@
+generated: '2026-09-13'
+method: probed
+source: live HTTPS probes of the named /.well-known path list on every host this record knows
+hosts:
+- host: https://www.everydayhealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /apis.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /apis.yml
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/everyday-health-negative-control-7f3ab91c.json
+    status: 404
+    bytes: 126393
+- host: https://everydayhealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /apis.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /apis.yml
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/everyday-health-negative-control-7f3ab91c.json
+    status: 404
+    bytes: 126393
+- host: https://api.everydayhealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/ucp.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/acp.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/aauth-resource.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/apis.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /apis.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /apis.yml
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/everyday-health-negative-control-7f3ab91c.json
+    status: 403
+    bytes: 42
+- host: https://feeds.everydayhealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/ucp.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/acp.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/aauth-resource.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/apis.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /apis.json
+    status: 404
+    file: null
+    note: JSON 404
+  - path: /apis.yml
+    status: 404
+    file: null
+    note: JSON 404
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+    note: AWS API Gateway MissingAuthenticationToken
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/everyday-health-negative-control-7f3ab91c.json
+    status: 403
+    bytes: 42
+- host: https://www.everydayhealthgroup.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    note: JSON 404
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /apis.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /apis.yml
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+    note: HTML 404 page
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/everyday-health-negative-control-7f3ab91c.json
+    status: 404
+    bytes: 349285
+hit_count: 0
+summary: No /.well-known discovery document is served on any Everyday Health host. www.everydayhealth.com
+  and everydayhealth.com return a 126KB HTML 404 shell for every path; api.everydayhealth.com and feeds.everydayhealth.com
+  are AWS API Gateway distributions that answer 403 MissingAuthenticationToken for every unauthenticated
+  path; www.everydayhealthgroup.com is a Squarespace marketing site returning its 404 page. Negative controls
+  on an impossible path returned the same non-2xx on all five hosts, so no host is a path-echoing false
+  positive. NO WellKnown or SecurityTxt pointer is emitted — this file records a measured absence.
+other_public_documents:
+- host: https://www.everydayhealth.com
+  path: /robots.txt
+  status: 200
+  bytes: 181496
+  file: everyday-health-robots.txt
+  note: Saved verbatim. Not a /.well-known discovery document and deliberately NOT counted as a well-known
+    hit; it is the only machine-readable policy document Everyday Health publishes and it is where the
+    company states its AI/agent crawling posture. Structured in llms/everyday-health-ai-crawler-policy.yml.
+- host: https://www.everydayhealth.com
+  path: /sitemap.xml
+  status: 200
+  bytes: 10512
+  file: null
+  note: sitemaps.org sitemapindex listing per-section sitemaps.
+- host: https://feeds.everydayhealth.com
+  path: /google-discover.xml
+  status: 200
+  bytes: 357153
+  file: null
+  note: RSS 2.0 feed with Media RSS (search.yahoo.com/mrss), Dublin Core and content:encoded namespaces.
+    The only public machine-readable content endpoint found on any Everyday Health host.
+x-evidence:
+  fetched: '2026-09-13'
+  hosts_probed: 5
+  paths_per_host: 14
+  hits: 0

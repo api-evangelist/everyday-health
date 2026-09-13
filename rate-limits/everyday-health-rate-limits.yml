@@ -1,0 +1,19 @@
+generated: '2026-09-13'
+method: probed
+source: live probes of api.everydayhealth.com and feeds.everydayhealth.com; documentation search across everydayhealth.com
+  and everydayhealthgroup.com
+limit_count: 0
+rate_limits: []
+response_headers: []
+note: No published rate limits exist because no public API is documented. api.everydayhealth.com is an AWS API Gateway
+  distribution fronted by CloudFront that answers 403 MissingAuthenticationToken to every unauthenticated request
+  on every path, returning no RateLimit-*, X-RateLimit-* or Retry-After headers; feeds.everydayhealth.com behaves
+  identically except on its named feed paths. The one public machine-readable endpoint, /google-discover.xml, returned
+  a 200 with no rate-limit headers of any kind. Recorded as an honest zero.
+x-evidence:
+- url: https://api.everydayhealth.com/
+  status: 403
+  note: AWS API Gateway, no rate-limit headers
+- url: https://feeds.everydayhealth.com/google-discover.xml
+  status: 200
+  note: no rate-limit headers observed

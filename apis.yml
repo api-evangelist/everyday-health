@@ -1,20 +1,106 @@
 aid: everyday-health
 name: Everyday Health
-description: 'Everyday Health is a company surfaced via the API Evangelist harvest backlog (source: absent-parent)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Everyday Health is a consumer health media brand founded in 2002 and the flagship
+  property of Everyday Health Group, a division of Ziff Davis (NASDAQ: ZD). The group operates a
+  portfolio of consumer, pregnancy-and-parenting and healthcare-professional brands — Everyday
+  Health, BabyCenter, What to Expect, MedPage Today, Castle Connolly, Diabetes Daily, DailyOM,
+  Lose It!, Migraine Again, theSkimm, HealthCentral and Emma''s Diary — and sells pharma
+  commercialization, digital health and wellness, and provider solutions to life sciences
+  companies, hospitals, health systems and clinicians. It is a publisher and advertising business,
+  not an API platform: there is no developer portal, no public API documentation, no OpenAPI or
+  other machine-readable contract, no SDKs and no hosted MCP or agent surface on any Everyday
+  Health host. This API Evangelist profile captures what the company does publish programmatically
+  — a sitemap index, one public RSS/Media RSS content feed, an auth-gated AWS API Gateway host at
+  api.everydayhealth.com, and an unusually explicit robots.txt that blocks 107 named AI and agent
+  crawlers site-wide while carving out two commercial product-review URLs.'
 url: https://raw.githubusercontent.com/api-evangelist/everyday-health/refs/heads/main/apis.yml
+image: https://images.everydayhealth.com/react-component-images/everyday-health-01.png
 x-type: company
 x-source: harvest:absent-parent
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
+x-parent-company: 'Ziff Davis (NASDAQ: ZD)'
 specificationVersion: '0.20'
 created: '2026-09-13'
 modified: '2026-09-13'
 tags:
 - Company
+- Health
+- Consumer Health
+- Media
+- Publishing
+- Content
+- Healthcare
+- Advertising
+- Pharma Marketing
+- Pregnancy
+- Parenting
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/everyday-health-domain-security.yml
+- type: Website
+  url: https://www.everydayhealth.com/
+- type: Company
+  url: https://www.everydayhealthgroup.com/
+- type: ParentCompany
+  url: https://www.ziffdavis.com/
+- type: About
+  url: https://www.everydayhealth.com/about-us/
+- type: Contact
+  url: https://www.everydayhealth.com/contact-us/
+- type: Support
+  url: https://www.everydayhealth.com/contact-us/
+- type: Press
+  url: https://www.everydayhealth.com/press-center/
+- type: Careers
+  url: https://www.everydayhealthgroup.com/everydayhealthgroup-careers
+- type: TermsOfService
+  url: https://www.everydayhealth.com/privacyterms/#everyday-health-terms-of-use
+- type: PrivacyPolicy
+  url: https://www.everydayhealth.com/privacyterms/#everyday_health_privacy_policy
+- type: EditorialPolicy
+  url: https://www.everydayhealth.com/editorial-policies/
+- type: BlogRSS
+  url: https://feeds.everydayhealth.com/google-discover.xml
+- type: Sitemap
+  url: https://www.everydayhealth.com/sitemap.xml
+- type: Robots
+  url: https://www.everydayhealth.com/robots.txt
+- type: AIPolicy
+  url: llms/everyday-health-ai-crawler-policy.yml
+- type: LLMsTxt
+  url: llms/everyday-health-llms.txt
+- type: Plans
+  url: plans/everyday-health-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/everyday-health-rate-limits.yml
+x-enrichment:
+  date: '2026-09-13'
+  status: minimal
+  artifacts_added: 8
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Everyday Health Group is a health publisher and pharma-marketing business with no developer
+    program at all — api.everydayhealth.com is a closed AWS API Gateway that answers 403
+    MissingAuthenticationToken on every path and is documented nowhere, and the company's robots.txt
+    instead blocks 107 named AI and agent crawlers site-wide and routes commercial content access to
+    licensing@ziffdavis.com.
+  evidence:
+    - url: https://api.everydayhealth.com/
+      status: 403
+    - url: https://www.everydayhealth.com/openapi.json
+      status: 404
+    - url: https://www.everydayhealth.com/.well-known/api-catalog
+      status: 404
+    - url: https://www.everydayhealth.com/robots.txt
+      status: 200
+  checked: '2026-09-13'
