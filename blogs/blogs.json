@@ -1,0 +1,14 @@
+{
+  "repo": "everyday-health",
+  "feeds": [
+    {
+      "source": "https://www.everydayhealth.com/editorial-policies/",
+      "feed_url": "https://feeds.everydayhealth.com/google-discover.xml",
+      "title": "",
+      "saved": 35,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 35,
+  "fetched": "2026-09-13T13:00:00Z"
+}
